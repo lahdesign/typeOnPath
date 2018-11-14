@@ -1,0 +1,43 @@
+body {
+  background-color: slategrey;
+  font-family: 'Monserrat';
+  font-size: 40px;
+}
+/* will change the color of the path */
+path {
+  fill: transparent;
+}
+
+text {
+  fill: seashell;
+}
+
+svg {
+-webkit-animation:move 10s linear infinite;
+	animation:move 10s linear infinite;
+
+transition:background-position .8s;
+}
+
+
+@-webkit-keyframes move {
+	from {
+	  left: 60px;
+		top: 0px; 
+  }
+	to {
+	   left: 370px;
+  
+	}
+  
+}
+
+@keyframes move {
+	from {
+		transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);}
+	to {
+		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+	}
+} 
